@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let drawTable;
+    drawTable = '<table border="1" width="300" cellpadding="3">';
+
+    for (i=1; i<=10;i++){
+        drawTable = drawTable+'<tr>';
+        for (j=1; j<=10;j++){
+            drawTable = drawTable + '<td>' + i*j + '</td>';
+        }
+        drawTable = drawTable + '</tr>';
+    }
+    drawTable = drawTable + '</table>';
+    document.write(drawTable);
+</script>
+</body>
+</html>
